@@ -1,0 +1,11 @@
+.pic {
+    margin: 100px;
+    width: 200px;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.pic > img {
+    max-width: 100%;
+    transform: rotate(-45deg) scale(1.44);
+}

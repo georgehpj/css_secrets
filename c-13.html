@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./css/c-13.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="tab">
+    TRAPEZOID
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#" class="cur-nav">Projects</a>
+    <a href="#">About</a>
+</nav>
+
+<script>
+    document.body.addEventListener("click", function(e){
+        if('a' == e.target.nodeName.toLowerCase()){
+            var matched = [];
+            var node = e.target.parentNode.firstElementChild;
+            console.log(node.className);
+            for(;node;node = node.nextElementSibling){
+                node.classList.remove('cur-nav');
+            }
+            e.target.classList.add('cur-nav');
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p.p1 {
+            text-indent: 2em;
+        }
+
+        p.p2 {
+            padding: 2em;
+            text-indent: -2em;
+        }
+
+        p.p3 {
+            text-indent: -3em;
+        }
+    </style>
+</head>
+<body>
+<p class="p1">
+    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body,
+    canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em,
+    embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6header,
+</p>
+<p class="p2">
+    hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav,
+    object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span,
+    strike, strong, sub, summary, sup, tfoot, th, thead, time, tr, tt, u, ul, var, video,
+    xmp
+</p>
+<p class="p3">
+    {
+    border: 0;
+    font-family: 'Static-Bold','Microsoft Yahei', 'Hiragino Sans GB', 'Arial', 'sans-serif';
+    }
+</p>
+</body>
+<script>
+
+    for (var i = 0, arr = []; i <= 3; i++) {
+//        arr.push(function () {
+//            alert(i);
+//        });
+        arr.push((function(index){
+            return function(){
+                alert(index);
+            }
+        })(i));
+    }
+    //alert(i);
+    arr.forEach(function (fn) {
+        fn();
+    });
+
+</script>
+</html>

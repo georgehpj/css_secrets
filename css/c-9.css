@@ -1,0 +1,34 @@
+.border-radius1, .border-radius2, .border-radius3, .border-radius4 {
+    background: #58a;
+    width: 200px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.border-radius2 {
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.border-radius3 {
+    border-radius: 0 0 100% 0 ;
+}
+
+.border-radius4 {
+    z-index: -1;
+    border-radius: 35% 13px/ 80% 13px;
+}
+
+.border-radius5 {
+    background: #8bd;
+    height: 73px;
+    border-radius: 35% 13px/ 80% 13px;
+}
+
+.border-radius6 {
+    float: right;
+    background: #adf;
+    width: 185px;
+    height: 45px;
+    border-radius: 35% 13px/ 80% 13px;
+}
